@@ -13,6 +13,8 @@ public class Exercicio08 {
 		System.out.print("Escreva o valor de fábrica: ");
 		valorFabrica = read.nextDouble();
 		
+		read.close();
+		
 		valorFabrica = valorFabrica + (valorFabrica * 0.28);
 		valorFabrica = valorFabrica + (valorFabrica * 0.45);
 		
