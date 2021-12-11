@@ -26,8 +26,8 @@ public class Exercicio02 {
 			}
 			System.out.println();
 		}		
-		System.out.println("\nForam repetido : " + contadorPar + " o número par!");
-		System.out.println("Foram repetido : " + contadorImpar + " o número ímpar!");		
+		System.out.println("\nVocê digitou  " + contadorPar + " números pares!");
+		System.out.println("Você digitou  " + contadorImpar + " números ímpares!");		
 		read.close();
 		
 		System.out.println("\nOs números pares que você digitou(Excluindo o numero zero): ");
