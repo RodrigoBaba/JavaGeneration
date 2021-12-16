@@ -8,22 +8,28 @@ public class TesteAnimal {
 
 		Scanner read = new Scanner(System.in);
 		
-		Cavalo cavalo = new Cavalo();
-		Cachorro dog = new Cachorro();
-		Preguica preguica = new Preguica();
+		Polimorfismo som = new Polimorfismo();
+		Animal cavalo = new Cavalo();
+		AnimalInterface cav = new Cavalo();
+		
+		Animal dog = new Cachorro();
+		AnimalInterface cachorro = new Cachorro();
+
+		Animal preguica = new Preguica();
+		AnimalInterface preg = new Preguica();
 		
 		System.out.print("Qual nome do seu cavalo: ");
 		String nome = read.next();
 		cavalo.setNome(nome);
 		System.out.print("Qual idade do seu cavalo: ");
 		int idade = read.nextInt();
-		cavalo.setIdade(idade);		
+		cavalo.setIdade(idade);
 		
 		System.out.println("\nSeu cavalo se chama " + cavalo.getNome());
-		System.out.println("Seu cavalo tem " + cavalo.getIdade() + " anos");
-		cavalo.som();
+		System.out.println("Seu cavalo tem " + cavalo.getIdade() + " anos");		
+		som.somAnimal(new Cavalo());
 		cavalo.correr();
-		
+		cav.comer();
 		
 		
 		System.out.print("\nQual nome do seu cachorro: ");
@@ -35,8 +41,9 @@ public class TesteAnimal {
 						
 		System.out.println("\nSeu cachorro se chama " + dog.getNome());
 		System.out.println("Seu cachorro tem " + dog.getIdade() + " anos");
-		dog.som();
+		som.somAnimal(new Cachorro());
 		dog.correr();
+		cachorro.comer();
 
 		
 		System.out.print("\nQual o nome da preguiça: ");
@@ -48,8 +55,9 @@ public class TesteAnimal {
 						
 		System.out.println("\nA preguiça se chama " + preguica.getNome());
 		System.out.println("A pregiça tem " + preguica.getIdade() + " anos");
-		preguica.som();
+		som.somAnimal(new Preguica());
 		preguica.subirEmArvore();
+		preg.comer();
 		
 		read.close();
 		

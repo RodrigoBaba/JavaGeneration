@@ -1,13 +1,18 @@
 package br.com.generation.exercicios.classe.heranca01;
 
-public class Cavalo extends Animal {
+public class Cavalo extends Animal implements AnimalInterface{
 
-	public static void som() {
+	public void som() {
 		System.out.println("O cavalo está relinchando .....");
 	}
 	
-	public static void correr() {
-		System.out.println("O cavalo está correr ....");
+	public void correr() {
+		System.out.println("O cavalo está correndo ....");
+	}
+
+	@Override
+	public void comer() {
+		System.out.println("O cavalo está comendo ....");		
 	}
 	
 }

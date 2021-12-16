@@ -1,6 +1,6 @@
 package br.com.generation.exercicios.classe.heranca01;
 
-public class Animal {
+public abstract class Animal {
 
 	private String nome;
 	private int idade;
@@ -19,4 +19,17 @@ public class Animal {
 		this.idade = idade;
 	}
 		
+	
+	public  void som() {
+		System.out.println("O animal está fazendo um som!!");
+	}
+	
+	public  void correr() {
+		System.out.println("O animal está correndo ....");
+		
+	}
+	
+	public  void subirEmArvore() {
+		System.out.println("O animal está subindo na árvore ...");
+	}
 }
